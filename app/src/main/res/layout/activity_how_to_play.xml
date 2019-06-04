@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround_Color"
+    tools:context="com.example.sudoajay.tic_tac_toe.com.sudoajay.tic_tac_toe.HowToPlay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="  How To Play"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:paddingTop="15dp"
+                android:text="Tic-Tac -Toe  involves looking ahead and trying to figure out what the person playing against you might do next."
+                android:textAllCaps="false"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:paddingTop="10dp"
+                android:text=" RULES FOR TIC-TAC-TOE"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# You are X, your friend (or the computer in this case) is O.Players take turns putting their marks in empty squares." />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="# The game is played on a grid that's 3 squares by 3 squares."
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner." />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie." />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:paddingTop="10dp"
+                android:text="HOW CAN I WIN AT TIC-TAC-TOE ?"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# To beat the computer (or at least tie), you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# Part of your strategy is trying to figure out how to get three Xs in a row. The other part is trying to figure out how to stop the computer from getting three Os in a row." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# After you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# You also have to watch where the computer puts its O. That could change what you do next. If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, or the computer will win. You are forced to play in a particular square or lose the game." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="# If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie." />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
